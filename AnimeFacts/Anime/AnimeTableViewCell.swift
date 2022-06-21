@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimeCell: UITableViewCell {
+class AnimeTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var animeImageView: UIImageView!

@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
-protocol AnimeCoordinating {
+protocol AnimeCoordinating: AnyObject {
     func start()
+    func goToAnimeFacts(path: String)
 }
 
 class AnimeCoordinator: AnimeCoordinating {
@@ -21,7 +22,26 @@ class AnimeCoordinator: AnimeCoordinating {
     }
     
     func start() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AnimeViewController")
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AnimeViewController") as? AnimeViewController else {
+            return
+        }
+        vc.coordinator = self
         navigationController.viewControllers = [vc]
+    }
+    
+    func goToAnimeFacts(path: String) {
+        let animeFactsService = AnimeFactsService()
+        let animeFactsCoordinator = AnimeFactsCoordinator(navigationController: navigationController)
+        let animeFactsViewModel = AnimeFactsViewModel(
+            animeFactsService: animeFactsService,
+            coordinator: animeFactsCoordinator,
+            path: path
+        )
+        guard let viewController = UIStoryboard(name: "AnimeFactsList", bundle: nil).instantiateViewController(withIdentifier: "AnimeFactsListViewController") as? AnimeFactsListViewController else {
+            return
+        }
+        viewController.viewModel = animeFactsViewModel
+        //let vc = AnimeFactsListViewController(viewModel: animeFactsViewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

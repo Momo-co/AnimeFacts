@@ -19,9 +19,16 @@
 		08DAEF2B2861BC7700F55BA3 /* AnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */; };
 		08DAEF2D2861BFE100F55BA3 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2C2861BFE100F55BA3 /* Anime.swift */; };
 		08DAEF2F2861C01D00F55BA3 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */; };
-		08DAEF372861C72E00F55BA3 /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF362861C72E00F55BA3 /* AnimeCell.swift */; };
+		08DAEF372861C72E00F55BA3 /* AnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */; };
 		08DAEF3A2861CB5B00F55BA3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */; };
 		08DAEF3C286203BB00F55BA3 /* AnimeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */; };
+		08DAEF3F2862135600F55BA3 /* AnimeFactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */; };
+		08DAEF412862137F00F55BA3 /* AnimeFactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */; };
+		08DAEF43286216F300F55BA3 /* AnimeFactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */; };
+		08DAEF45286217E600F55BA3 /* AnimeFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF44286217E600F55BA3 /* AnimeFact.swift */; };
+		08DAEF472862198D00F55BA3 /* AnimeFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */; };
+		08DAEF49286219E200F55BA3 /* AnimeFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */; };
+		08DAEF4B28622D6500F55BA3 /* AnimeFactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +65,16 @@
 		08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeService.swift; sourceTree = "<group>"; };
 		08DAEF2C2861BFE100F55BA3 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
-		08DAEF362861C72E00F55BA3 /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewCell.swift; sourceTree = "<group>"; };
 		08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCoordinator.swift; sourceTree = "<group>"; };
+		08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimeFactsList.storyboard; sourceTree = "<group>"; };
+		08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsListViewController.swift; sourceTree = "<group>"; };
+		08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsTableViewCell.swift; sourceTree = "<group>"; };
+		08DAEF44286217E600F55BA3 /* AnimeFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFact.swift; sourceTree = "<group>"; };
+		08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsService.swift; sourceTree = "<group>"; };
+		08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsViewModel.swift; sourceTree = "<group>"; };
+		08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,7 @@
 		08DAEEBC2860C95B00F55BA3 /* AnimeFacts */ = {
 			isa = PBXGroup;
 			children = (
+				08DAEF3D2862114C00F55BA3 /* AnimeFactsList */,
 				08DAEF382861CB3E00F55BA3 /* Extension */,
 				08DAEF292861BC5200F55BA3 /* Anime */,
 				08DAEEBD2860C95B00F55BA3 /* AppDelegate.swift */,
@@ -147,7 +162,7 @@
 				08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */,
 				08DAEF2C2861BFE100F55BA3 /* Anime.swift */,
 				08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */,
-				08DAEF362861C72E00F55BA3 /* AnimeCell.swift */,
+				08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */,
 				08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */,
 			);
 			path = Anime;
@@ -159,6 +174,20 @@
 				08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		08DAEF3D2862114C00F55BA3 /* AnimeFactsList */ = {
+			isa = PBXGroup;
+			children = (
+				08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */,
+				08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */,
+				08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */,
+				08DAEF44286217E600F55BA3 /* AnimeFact.swift */,
+				08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */,
+				08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */,
+				08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */,
+			);
+			path = AnimeFactsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +297,7 @@
 				08DAEECA2860C95D00F55BA3 /* LaunchScreen.storyboard in Resources */,
 				08DAEEC72860C95D00F55BA3 /* Assets.xcassets in Resources */,
 				08DAEEC52860C95B00F55BA3 /* Main.storyboard in Resources */,
+				08DAEF3F2862135600F55BA3 /* AnimeFactsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,15 +322,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DAEF372861C72E00F55BA3 /* AnimeCell.swift in Sources */,
+				08DAEF472862198D00F55BA3 /* AnimeFactsService.swift in Sources */,
+				08DAEF372861C72E00F55BA3 /* AnimeTableViewCell.swift in Sources */,
 				08DAEF2B2861BC7700F55BA3 /* AnimeService.swift in Sources */,
 				08DAEF2D2861BFE100F55BA3 /* Anime.swift in Sources */,
 				08DAEF3C286203BB00F55BA3 /* AnimeCoordinator.swift in Sources */,
+				08DAEF49286219E200F55BA3 /* AnimeFactsViewModel.swift in Sources */,
 				08DAEEC22860C95B00F55BA3 /* AnimeViewController.swift in Sources */,
+				08DAEF412862137F00F55BA3 /* AnimeFactsListViewController.swift in Sources */,
 				08DAEF2F2861C01D00F55BA3 /* AnimeViewModel.swift in Sources */,
+				08DAEF4B28622D6500F55BA3 /* AnimeFactsCoordinator.swift in Sources */,
 				08DAEEBE2860C95B00F55BA3 /* AppDelegate.swift in Sources */,
 				08DAEF3A2861CB5B00F55BA3 /* UIImageView+Extensions.swift in Sources */,
 				08DAEEC02860C95B00F55BA3 /* SceneDelegate.swift in Sources */,
+				08DAEF45286217E600F55BA3 /* AnimeFact.swift in Sources */,
+				08DAEF43286216F300F55BA3 /* AnimeFactsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

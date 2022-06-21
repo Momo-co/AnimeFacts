@@ -10,7 +10,6 @@ import UIKit
 
 extension UIImageView {
     func downloaded(from urlString: String, contentMode mode: UIView.ContentMode = .scaleToFill) {
-        contentMode = mode
         guard let url = URL(string: urlString) else {
             return
         }

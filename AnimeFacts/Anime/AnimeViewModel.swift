@@ -30,9 +30,18 @@ class AnimeViewModel {
         }
     }
     
-    func getAnimeList() -> [Data] {
+    func getAnimeList() -> [AnimeData] {
         let animeList = animes.data
         return animeList
+    }
+    func getAnimeImage(index: Int) -> String {
+        let animeList = getAnimeList()
+        return animeList[index].animeImg
+    }
+    
+    func getAnimeName(index: Int) -> String {
+        let animeList = getAnimeList()
+        return animeList[index].animeName
     }
     
     func rewriteAnimeName(index: Int) -> String {

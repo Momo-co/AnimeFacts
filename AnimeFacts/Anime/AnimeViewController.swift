@@ -12,6 +12,8 @@ class AnimeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let animeViewModel = AnimeViewModel(animeService: AnimeService())
+    
+    weak var coordinator: AnimeCoordinating?
     var cancellable:AnyCancellable?
     
     override func viewDidLoad() {
@@ -24,6 +26,7 @@ class AnimeViewController: UIViewController {
             }
         })
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -32,14 +35,13 @@ class AnimeViewController: UIViewController {
     }
 }
 
-
 extension AnimeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animeViewModel.animes.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "animeCell") as? AnimeCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "animeTableViewCell") as? AnimeTableViewCell else {
             return UITableViewCell()
         }
         let animeCellList = animeViewModel.getAnimeList()
@@ -53,3 +55,9 @@ extension AnimeViewController: UITableViewDataSource {
     }
 }
 
+extension AnimeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let animeCellName = animeViewModel.getAnimeName(index: indexPath.row)
+        coordinator?.goToAnimeFacts(path: animeCellName)
+    }
+}

@@ -9,14 +9,14 @@ import Foundation
 
 struct Anime: Codable{
     var success: Bool
-    var data: [Data]
+    var data: [AnimeData]
     
     enum CodingKeys: CodingKey {
         case success, data
     }
 }
 
-struct Data: Codable {
+struct AnimeData: Codable {
     var animeId: Int
     var animeName: String
     var animeImg: String
