@@ -16,7 +16,7 @@ class AnimeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "Anime"
         animeViewModel.getAnimes()
         cancellable = animeViewModel.$animes.sink(receiveValue: { animes in
             DispatchQueue.main.async {

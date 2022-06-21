@@ -8,10 +8,23 @@
 import UIKit
 
 class AnimeCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var animeImageView: UIImageView!
+    
+    @IBOutlet weak var animeNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setUpAnimeName(name: String) {
+        animeNameLabel.text = name
+    }
+    
+    func setUpAnimeImage(imageURL: String) {
+        animeImageView.downloaded(from: imageURL)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -6,3 +6,22 @@
 //
 
 import Foundation
+import UIKit
+
+protocol AnimeCoordinating {
+    func start()
+}
+
+class AnimeCoordinator: AnimeCoordinating {
+    
+    let navigationController: UINavigationController
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func start() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AnimeViewController")
+        navigationController.viewControllers = [vc]
+    }
+}
