@@ -41,7 +41,8 @@ extension AnimeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "animeTableViewCell") as? AnimeTableViewCell else {
+        let cellIdentifier = Identifier.animeTableViewCell.rawValue
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? AnimeTableViewCell else {
             return UITableViewCell()
         }
         let animeCellList = animeViewModel.getAnimeList()

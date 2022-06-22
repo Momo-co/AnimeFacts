@@ -19,7 +19,7 @@ class AnimeViewModel {
     }
     
     func getAnimes() {
-        let url = "https://anime-facts-rest-api.herokuapp.com/api/v1"
+        let url = URLString.urlBase.rawValue
         
         let futurePublisher = animeService.getAnime(urlString: url, type: Anime.self)
         

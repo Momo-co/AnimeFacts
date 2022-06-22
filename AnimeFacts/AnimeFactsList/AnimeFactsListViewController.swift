@@ -46,7 +46,8 @@ extension AnimeFactsListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = animeFactsTableView.dequeueReusableCell(withIdentifier: "animeFactsTableViewCell") as? AnimeFactsTableViewCell else {
+        let cellIdentifier = Identifier.animeFactsTableViewCell.rawValue
+        guard let cell = animeFactsTableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? AnimeFactsTableViewCell else {
             return UITableViewCell()
         }
         if let currentCellFact = viewModel?.getAnimeFact(index: indexPath.row) {

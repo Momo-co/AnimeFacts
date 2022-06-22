@@ -27,9 +27,10 @@ class AnimeFactsViewModel {
     }
     
     func getAnimeFacts() {
-        let url = "https://anime-facts-rest-api.herokuapp.com/api/v1/\(path)"
+        var urlString = URLString.urlBase.rawValue
+        urlString += "\(path)"
         
-        let futurePublisher = animeFactsService.getAnimeFacts(urlString: url, type: AnimeFact.self)
+        let futurePublisher = animeFactsService.getAnimeFacts(urlString: urlString, type: AnimeFact.self)
         
         anyCancellable = futurePublisher.sink { completion in
             print(completion)
@@ -50,7 +51,7 @@ class AnimeFactsViewModel {
     
     func rewriteAnimeNameTitle() -> String {
         var animeNameTitle = path.replacingOccurrences(of: "_", with: " ").capitalized
-        animeNameTitle += " Facts"
+        animeNameTitle += NavTitle.animeFact.rawValue
         return animeNameTitle
     }
     

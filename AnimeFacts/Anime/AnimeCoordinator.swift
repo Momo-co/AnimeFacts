@@ -22,7 +22,8 @@ class AnimeCoordinator: AnimeCoordinating {
     }
     
     func start() {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AnimeViewController") as? AnimeViewController else {
+        let mainName = StoryBoardIdentifier.mainName.rawValue
+        guard let vc = UIStoryboard(name: mainName, bundle: nil).instantiateViewController(withIdentifier: "AnimeViewController") as? AnimeViewController else {
             return
         }
         vc.coordinator = self
@@ -37,11 +38,12 @@ class AnimeCoordinator: AnimeCoordinating {
             coordinator: animeFactsCoordinator,
             path: path
         )
-        guard let viewController = UIStoryboard(name: "AnimeFactsList", bundle: nil).instantiateViewController(withIdentifier: "AnimeFactsListViewController") as? AnimeFactsListViewController else {
+        let viewControllerIdentifer = ViewControllerIdentifier.animeFactsListViewController.rawValue
+        let animeFactsListName = StoryBoardIdentifier.animeFactsListName.rawValue
+        guard let viewController = UIStoryboard(name: animeFactsListName, bundle: nil).instantiateViewController(withIdentifier: viewControllerIdentifer) as? AnimeFactsListViewController else {
             return
         }
         viewController.viewModel = animeFactsViewModel
-        //let vc = AnimeFactsListViewController(viewModel: animeFactsViewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
 }
