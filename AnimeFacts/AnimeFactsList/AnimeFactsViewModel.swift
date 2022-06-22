@@ -26,9 +26,7 @@ class AnimeFactsViewModel {
         self.path = path
     }
     
-    func getAnimeFacts() {
-        var urlString = URLString.urlBase.rawValue
-        urlString += "\(path)"
+    func getAnimeFacts(urlString: String) {
         
         let futurePublisher = animeFactsService.getAnimeFacts(urlString: urlString, type: AnimeFact.self)
         

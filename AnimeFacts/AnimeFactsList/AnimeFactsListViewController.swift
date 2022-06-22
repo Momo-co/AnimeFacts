@@ -19,7 +19,9 @@ class AnimeFactsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.getAnimeFacts()
+        var urlString = URLString.urlBase.rawValue
+        urlString += "\(viewModel?.path ?? URLString.defaultEndpoint.rawValue)"
+        viewModel?.getAnimeFacts(urlString: urlString)
         title = viewModel?.rewriteAnimeNameTitle()
         cancellable = viewModel?.$animeFacts.sink(receiveValue: { animeFacts in
             self.animeImageView.downloaded(from: animeFacts.img)

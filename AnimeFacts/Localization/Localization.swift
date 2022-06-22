@@ -9,6 +9,7 @@ import Foundation
 
 enum URLString: String {
     case urlBase = "https://anime-facts-rest-api.herokuapp.com/api/v1/"
+    case defaultEndpoint = "bleach"
 }
 
 enum Identifier: String {
