@@ -19,7 +19,8 @@ class AnimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Anime"
-        animeViewModel.getAnimes()
+        let url = URLString.urlBase.rawValue
+        animeViewModel.getAnimes(urlString: url)
         cancellable = animeViewModel.$animes.sink(receiveValue: { animes in
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -45,7 +46,7 @@ extension AnimeViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? AnimeTableViewCell else {
             return UITableViewCell()
         }
-        let animeCellList = animeViewModel.getAnimeList()
+        let animeCellList = animeViewModel.animes.data
         let currentCell = animeCellList[indexPath.row]
         let currentCellAnimeName = animeViewModel.rewriteAnimeName(index: indexPath.row)
         

@@ -8,8 +8,17 @@
 import Foundation
 import Combine
 
-class AnimeService {
-    func getAnime<A:Decodable>(urlString: String, type:A.Type) -> Future<A, Error> {
+enum NetworkError: Error {
+    case dataNotFound
+    case parsingError
+}
+
+protocol AnimeServicing {
+    func getAnime<A:Decodable>(urlString: String, type:A.Type) -> Future<A, NetworkError>
+}
+
+class AnimeService: AnimeServicing {
+    func getAnime<A:Decodable>(urlString: String, type:A.Type) -> Future<A, NetworkError> {
         return Future { promise in
             let urlSession = URLSession.shared
             guard let url = URL(string: urlString) else {
@@ -18,6 +27,7 @@ class AnimeService {
             
             let dataTask = urlSession.dataTask(with: url) { data, urlResponse, error in
                 guard let _data = data else {
+                    promise(.failure(NetworkError.dataNotFound))
                     return
                 }
                 let jsonDecoder = JSONDecoder()
@@ -26,7 +36,7 @@ class AnimeService {
                     let animes = try jsonDecoder.decode(A.self, from: _data)
                     promise(.success(animes))
                 } catch {
-                    promise(.failure(error))
+                    promise(.failure(NetworkError.parsingError))
                 }
             }
             dataTask.resume()

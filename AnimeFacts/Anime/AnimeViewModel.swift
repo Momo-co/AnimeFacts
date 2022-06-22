@@ -12,16 +12,15 @@ class AnimeViewModel {
     @Published private(set) var animes = Anime(success: false, data: [])
     var anyCancellable: AnyCancellable?
     
-    private let animeService: AnimeService
+    private let animeService: AnimeServicing
     
-    init(animeService: AnimeService) {
+    init(animeService: AnimeServicing) {
         self.animeService = animeService
     }
     
-    func getAnimes() {
-        let url = URLString.urlBase.rawValue
+    func getAnimes(urlString: String) {
         
-        let futurePublisher = animeService.getAnime(urlString: url, type: Anime.self)
+        let futurePublisher = animeService.getAnime(urlString: urlString, type: Anime.self)
         
         anyCancellable = futurePublisher.sink { completion in
             print(completion)
@@ -30,17 +29,13 @@ class AnimeViewModel {
         }
     }
     
-    func getAnimeList() -> [AnimeData] {
-        let animeList = animes.data
-        return animeList
-    }
     func getAnimeImage(index: Int) -> String {
-        let animeList = getAnimeList()
+        let animeList = animes.data
         return animeList[index].animeImg
     }
     
     func getAnimeName(index: Int) -> String {
-        let animeList = getAnimeList()
+        let animeList = animes.data
         return animeList[index].animeName
     }
     

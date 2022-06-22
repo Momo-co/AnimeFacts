@@ -30,6 +30,9 @@
 		08DAEF49286219E200F55BA3 /* AnimeFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */; };
 		08DAEF4B28622D6500F55BA3 /* AnimeFactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */; };
 		08E3C8B1286320D000C8EBEC /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B0286320D000C8EBEC /* Localization.swift */; };
+		08E3C8B328632AE600C8EBEC /* Stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E3C8B228632AE600C8EBEC /* Stub.json */; };
+		08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */; };
+		08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsViewModel.swift; sourceTree = "<group>"; };
 		08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsCoordinator.swift; sourceTree = "<group>"; };
 		08E3C8B0286320D000C8EBEC /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		08E3C8B228632AE600C8EBEC /* Stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stub.json; sourceTree = "<group>"; };
+		08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModelTests.swift; sourceTree = "<group>"; };
+		08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				08DAEED42860C95E00F55BA3 /* AnimeFactsTests.swift */,
+				08E3C8B228632AE600C8EBEC /* Stub.json */,
+				08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */,
+				08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */,
 			);
 			path = AnimeFactsTests;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E3C8B328632AE600C8EBEC /* Stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +367,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DAEED52860C95E00F55BA3 /* AnimeFactsTests.swift in Sources */,
+				08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */,
+				08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
