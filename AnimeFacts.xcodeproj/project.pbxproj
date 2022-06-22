@@ -33,6 +33,9 @@
 		08E3C8B328632AE600C8EBEC /* Stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E3C8B228632AE600C8EBEC /* Stub.json */; };
 		08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */; };
 		08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */; };
+		08E3C8BF2863811000C8EBEC /* Stub2.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E3C8BE2863811000C8EBEC /* Stub2.json */; };
+		08E3C8C12863812E00C8EBEC /* AnimeFactsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8C02863812E00C8EBEC /* AnimeFactsViewModelTests.swift */; };
+		08E3C8C32863814C00C8EBEC /* MockAnimeFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8C22863814C00C8EBEC /* MockAnimeFactsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		08E3C8B228632AE600C8EBEC /* Stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stub.json; sourceTree = "<group>"; };
 		08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModelTests.swift; sourceTree = "<group>"; };
 		08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeService.swift; sourceTree = "<group>"; };
+		08E3C8BE2863811000C8EBEC /* Stub2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stub2.json; sourceTree = "<group>"; };
+		08E3C8C02863812E00C8EBEC /* AnimeFactsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsViewModelTests.swift; sourceTree = "<group>"; };
+		08E3C8C22863814C00C8EBEC /* MockAnimeFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeFactsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 				08E3C8B228632AE600C8EBEC /* Stub.json */,
 				08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */,
 				08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */,
+				08E3C8BE2863811000C8EBEC /* Stub2.json */,
+				08E3C8C02863812E00C8EBEC /* AnimeFactsViewModelTests.swift */,
+				08E3C8C22863814C00C8EBEC /* MockAnimeFactsService.swift */,
 			);
 			path = AnimeFactsTests;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E3C8BF2863811000C8EBEC /* Stub2.json in Resources */,
 				08E3C8B328632AE600C8EBEC /* Stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +379,8 @@
 				08DAEED52860C95E00F55BA3 /* AnimeFactsTests.swift in Sources */,
 				08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */,
 				08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */,
+				08E3C8C12863812E00C8EBEC /* AnimeFactsViewModelTests.swift in Sources */,
+				08E3C8C32863814C00C8EBEC /* MockAnimeFactsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
