@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		08DAEEBE2860C95B00F55BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEBD2860C95B00F55BA3 /* AppDelegate.swift */; };
 		08DAEEC02860C95B00F55BA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEBF2860C95B00F55BA3 /* SceneDelegate.swift */; };
-		08DAEEC22860C95B00F55BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEC12860C95B00F55BA3 /* ViewController.swift */; };
+		08DAEEC22860C95B00F55BA3 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEC12860C95B00F55BA3 /* AnimeViewController.swift */; };
 		08DAEEC52860C95B00F55BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DAEEC32860C95B00F55BA3 /* Main.storyboard */; };
 		08DAEEC72860C95D00F55BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DAEEC62860C95D00F55BA3 /* Assets.xcassets */; };
 		08DAEECA2860C95D00F55BA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DAEEC82860C95D00F55BA3 /* LaunchScreen.storyboard */; };
 		08DAEED52860C95E00F55BA3 /* AnimeFactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEED42860C95E00F55BA3 /* AnimeFactsTests.swift */; };
 		08DAEEDF2860C95E00F55BA3 /* AnimeFactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEDE2860C95E00F55BA3 /* AnimeFactsUITests.swift */; };
 		08DAEEE12860C95E00F55BA3 /* AnimeFactsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEEE02860C95E00F55BA3 /* AnimeFactsUITestsLaunchTests.swift */; };
+		08DAEF2B2861BC7700F55BA3 /* AnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */; };
+		08DAEF2D2861BFE100F55BA3 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2C2861BFE100F55BA3 /* Anime.swift */; };
+		08DAEF2F2861C01D00F55BA3 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */; };
+		08DAEF372861C72E00F55BA3 /* AnimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */; };
+		08DAEF3A2861CB5B00F55BA3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */; };
+		08DAEF3C286203BB00F55BA3 /* AnimeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */; };
+		08DAEF3F2862135600F55BA3 /* AnimeFactsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */; };
+		08DAEF412862137F00F55BA3 /* AnimeFactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */; };
+		08DAEF43286216F300F55BA3 /* AnimeFactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */; };
+		08DAEF45286217E600F55BA3 /* AnimeFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF44286217E600F55BA3 /* AnimeFact.swift */; };
+		08DAEF472862198D00F55BA3 /* AnimeFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */; };
+		08DAEF49286219E200F55BA3 /* AnimeFactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */; };
+		08DAEF4B28622D6500F55BA3 /* AnimeFactsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */; };
+		08E3C8B1286320D000C8EBEC /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B0286320D000C8EBEC /* Localization.swift */; };
+		08E3C8B328632AE600C8EBEC /* Stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E3C8B228632AE600C8EBEC /* Stub.json */; };
+		08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */; };
+		08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +56,7 @@
 		08DAEEBA2860C95B00F55BA3 /* AnimeFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DAEEBD2860C95B00F55BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DAEEBF2860C95B00F55BA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08DAEEC12860C95B00F55BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08DAEEC12860C95B00F55BA3 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
 		08DAEEC42860C95B00F55BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08DAEEC62860C95D00F55BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08DAEEC92860C95D00F55BA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,23 @@
 		08DAEEDA2860C95E00F55BA3 /* AnimeFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DAEEDE2860C95E00F55BA3 /* AnimeFactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsUITests.swift; sourceTree = "<group>"; };
 		08DAEEE02860C95E00F55BA3 /* AnimeFactsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeService.swift; sourceTree = "<group>"; };
+		08DAEF2C2861BFE100F55BA3 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
+		08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTableViewCell.swift; sourceTree = "<group>"; };
+		08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCoordinator.swift; sourceTree = "<group>"; };
+		08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnimeFactsList.storyboard; sourceTree = "<group>"; };
+		08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsListViewController.swift; sourceTree = "<group>"; };
+		08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsTableViewCell.swift; sourceTree = "<group>"; };
+		08DAEF44286217E600F55BA3 /* AnimeFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFact.swift; sourceTree = "<group>"; };
+		08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsService.swift; sourceTree = "<group>"; };
+		08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsViewModel.swift; sourceTree = "<group>"; };
+		08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeFactsCoordinator.swift; sourceTree = "<group>"; };
+		08E3C8B0286320D000C8EBEC /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		08E3C8B228632AE600C8EBEC /* Stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Stub.json; sourceTree = "<group>"; };
+		08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModelTests.swift; sourceTree = "<group>"; };
+		08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +133,12 @@
 		08DAEEBC2860C95B00F55BA3 /* AnimeFacts */ = {
 			isa = PBXGroup;
 			children = (
+				08E3C8AF2863208000C8EBEC /* Localization */,
+				08DAEF3D2862114C00F55BA3 /* AnimeFactsList */,
+				08DAEF382861CB3E00F55BA3 /* Extension */,
+				08DAEF292861BC5200F55BA3 /* Anime */,
 				08DAEEBD2860C95B00F55BA3 /* AppDelegate.swift */,
 				08DAEEBF2860C95B00F55BA3 /* SceneDelegate.swift */,
-				08DAEEC12860C95B00F55BA3 /* ViewController.swift */,
-				08DAEEC32860C95B00F55BA3 /* Main.storyboard */,
 				08DAEEC62860C95D00F55BA3 /* Assets.xcassets */,
 				08DAEEC82860C95D00F55BA3 /* LaunchScreen.storyboard */,
 				08DAEECB2860C95D00F55BA3 /* Info.plist */,
@@ -114,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				08DAEED42860C95E00F55BA3 /* AnimeFactsTests.swift */,
+				08E3C8B228632AE600C8EBEC /* Stub.json */,
+				08E3C8B428632B1700C8EBEC /* AnimeViewModelTests.swift */,
+				08E3C8B628632B3200C8EBEC /* MockAnimeService.swift */,
 			);
 			path = AnimeFactsTests;
 			sourceTree = "<group>";
@@ -125,6 +164,50 @@
 				08DAEEE02860C95E00F55BA3 /* AnimeFactsUITestsLaunchTests.swift */,
 			);
 			path = AnimeFactsUITests;
+			sourceTree = "<group>";
+		};
+		08DAEF292861BC5200F55BA3 /* Anime */ = {
+			isa = PBXGroup;
+			children = (
+				08DAEEC32860C95B00F55BA3 /* Main.storyboard */,
+				08DAEEC12860C95B00F55BA3 /* AnimeViewController.swift */,
+				08DAEF2A2861BC7700F55BA3 /* AnimeService.swift */,
+				08DAEF2C2861BFE100F55BA3 /* Anime.swift */,
+				08DAEF2E2861C01D00F55BA3 /* AnimeViewModel.swift */,
+				08DAEF362861C72E00F55BA3 /* AnimeTableViewCell.swift */,
+				08DAEF3B286203BB00F55BA3 /* AnimeCoordinator.swift */,
+			);
+			path = Anime;
+			sourceTree = "<group>";
+		};
+		08DAEF382861CB3E00F55BA3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08DAEF392861CB5B00F55BA3 /* UIImageView+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		08DAEF3D2862114C00F55BA3 /* AnimeFactsList */ = {
+			isa = PBXGroup;
+			children = (
+				08DAEF3E2862135600F55BA3 /* AnimeFactsList.storyboard */,
+				08DAEF402862137F00F55BA3 /* AnimeFactsListViewController.swift */,
+				08DAEF42286216F300F55BA3 /* AnimeFactsTableViewCell.swift */,
+				08DAEF44286217E600F55BA3 /* AnimeFact.swift */,
+				08DAEF462862198D00F55BA3 /* AnimeFactsService.swift */,
+				08DAEF48286219E200F55BA3 /* AnimeFactsViewModel.swift */,
+				08DAEF4A28622D6500F55BA3 /* AnimeFactsCoordinator.swift */,
+			);
+			path = AnimeFactsList;
+			sourceTree = "<group>";
+		};
+		08E3C8AF2863208000C8EBEC /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				08E3C8B0286320D000C8EBEC /* Localization.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +317,7 @@
 				08DAEECA2860C95D00F55BA3 /* LaunchScreen.storyboard in Resources */,
 				08DAEEC72860C95D00F55BA3 /* Assets.xcassets in Resources */,
 				08DAEEC52860C95B00F55BA3 /* Main.storyboard in Resources */,
+				08DAEF3F2862135600F55BA3 /* AnimeFactsList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E3C8B328632AE600C8EBEC /* Stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +343,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DAEEC22860C95B00F55BA3 /* ViewController.swift in Sources */,
+				08DAEF472862198D00F55BA3 /* AnimeFactsService.swift in Sources */,
+				08DAEF372861C72E00F55BA3 /* AnimeTableViewCell.swift in Sources */,
+				08DAEF2B2861BC7700F55BA3 /* AnimeService.swift in Sources */,
+				08DAEF2D2861BFE100F55BA3 /* Anime.swift in Sources */,
+				08DAEF3C286203BB00F55BA3 /* AnimeCoordinator.swift in Sources */,
+				08DAEF49286219E200F55BA3 /* AnimeFactsViewModel.swift in Sources */,
+				08E3C8B1286320D000C8EBEC /* Localization.swift in Sources */,
+				08DAEEC22860C95B00F55BA3 /* AnimeViewController.swift in Sources */,
+				08DAEF412862137F00F55BA3 /* AnimeFactsListViewController.swift in Sources */,
+				08DAEF2F2861C01D00F55BA3 /* AnimeViewModel.swift in Sources */,
+				08DAEF4B28622D6500F55BA3 /* AnimeFactsCoordinator.swift in Sources */,
 				08DAEEBE2860C95B00F55BA3 /* AppDelegate.swift in Sources */,
+				08DAEF3A2861CB5B00F55BA3 /* UIImageView+Extensions.swift in Sources */,
 				08DAEEC02860C95B00F55BA3 /* SceneDelegate.swift in Sources */,
+				08DAEF45286217E600F55BA3 /* AnimeFact.swift in Sources */,
+				08DAEF43286216F300F55BA3 /* AnimeFactsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +367,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DAEED52860C95E00F55BA3 /* AnimeFactsTests.swift in Sources */,
+				08E3C8B728632B3200C8EBEC /* MockAnimeService.swift in Sources */,
+				08E3C8B528632B1700C8EBEC /* AnimeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
